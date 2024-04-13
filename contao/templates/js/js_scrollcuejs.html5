@@ -1,0 +1,7 @@
+<?php 
+$GLOBALS['TL_CSS'][] = 'bundles/contaoscrollcuejs/css/scrollCue.css'; ?>
+
+<?= Contao\Template::generateScriptTag('bundles/contaoscrollcuejs/js/scrollCue.min.js') ?>
+<script>
+  scrollCue.init();
+</script>

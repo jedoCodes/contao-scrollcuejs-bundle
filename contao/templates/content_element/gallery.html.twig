@@ -1,0 +1,41 @@
+{% extends "@Contao/content_element/gallery.html.twig" %}
+
+
+{% block content %}
+	{% block list %}
+  {% if not data.scrollcuejsAnimationeffects %}
+  <ul>
+  {% endif %}
+		{% block images %}
+      	{% for image in images %}
+
+          {% if not data.scrollcuejsAnimationeffects %}
+          <li>
+          {% endif %}
+          
+          {% block image %}
+          {% if not data.scrollcuejsAnimationeffects %}
+          <figure>
+          {% endif %}
+
+					  {% with {figure: image} %}
+              <img src="{{ figure.image.getImageSrc(true) }}">
+            {% endwith %}
+
+          {% if not data.scrollcuejsAnimationeffects %}
+          </figure>
+          {% endif %}
+
+          {% endblock %}
+
+          {% if not data.scrollcuejsAnimationeffects %}
+          </li>
+          {% endif %}
+
+      	{% endfor %} 
+    	{% endblock %}
+  {% if not data.scrollcuejsAnimationeffects %}
+    </ul>
+  {% endif %}
+	{% endblock %}
+{% endblock %}

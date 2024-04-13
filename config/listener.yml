@@ -1,0 +1,3 @@
+services:
+  JedoCodes\ContaoScrollCueJs\EventListener\ContaoScrollCueJsHookListener:
+    public: true

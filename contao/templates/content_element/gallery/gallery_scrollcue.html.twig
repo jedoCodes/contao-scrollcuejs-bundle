@@ -1,0 +1,35 @@
+{% extends "@Contao/content_element/gallery.html.twig" %}
+
+
+
+
+
+{% block content %}
+
+{{data.scrollcuejsAnimationeffects}}
+
+{% if data.scrollcuejsAnimationeffects %}
+
+	{% block list %}
+    		{% block images %}
+      		{% for image in images %}
+          		{% block image %}
+            			{% with {figure: image} %}
+              			<img src="{{ figure.image.getImageSrc(true) }}">
+            			{% endwith %}
+          		{% endblock %}
+      		{% endfor %} 
+{{ dump(parent()) }}
+    		{% endblock %}
+
+
+	{% endblock %}
+
+{% else %}
+
+	{{parent()}}
+
+{% endif %}
+
+{% endblock %}
+
