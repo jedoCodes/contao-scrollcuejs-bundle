@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 /**
  * ScrollCue.js bundle for Contao Open Source CMS
- * Copyright (c) 2023 jedo.Codes
+ * Copyright (c) 2024 jedo.Codes
  *
  * @category ContaoBundle
- * @package  jedocodes/sitebuilder-bundle
- * @author   jedo.Codes <develop@jedo.codes>
+ * @package  jedocodes/contao-scrollcuejs-bundle
+ * @author   jedo.Codes <dev@jedo.codes>
  * @link     https://github.com/jedocodes/contao-scrollcuejs-bundle
  */
 
